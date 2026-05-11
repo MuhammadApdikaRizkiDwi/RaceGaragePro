@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RACEGARAGE PRO"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Racing Workshop Reservation"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- NAMA -->
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Pelanggan"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:backgroundTint="#FF0000"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- PHONE -->
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor HP"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:backgroundTint="#FF0000"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="14dp" />
+
+        <!-- SPINNER -->
+
+        <Spinner
+            android:id="@+id/spService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#1E1E1E"
+            android:padding="8dp" />
+
+        <!-- VEHICLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kendaraan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbMotor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motor Racing"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#FF0000" />
+
+            <RadioButton
+                android:id="@+id/rbMobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobil Racing"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#FF0000" />
+
+        </RadioGroup>
+
+        <!-- DATE -->
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal Reservasi"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#303030"
+            android:layout_marginTop="18dp" />
+
+        <!-- TIME -->
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Jam Reservasi"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#303030"
+            android:layout_marginTop="12dp" />
+
+        <!-- PAKET -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paket Tambahan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbNitrogen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nitrogen Ban"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FF0000" />
+
+        <CheckBox
+            android:id="@+id/cbWash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuci Premium"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FF0000" />
+
+        <CheckBox
+            android:id="@+id/cbOil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti Oli Gratis"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FF0000" />
+
+        <!-- ESTIMASI HARGA -->
+
+        <TextView
+            android:id="@+id/tvEstimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimasi Harga : Rp 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFD700"
+            android:padding="14dp"
+            android:layout_marginTop="20dp"
+            android:background="#1E1E1E"
+            android:gravity="center"
+            android:elevation="4dp" />
+
+        <!-- BOOKING -->
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reservasi Sekarang"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="26dp" />
+
+        <!-- SHARE -->
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Booking"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#444444"
+            android:layout_marginTop="12dp" />
+
+        <!-- GMAIL -->
+
+        <Button
+            android:id="@+id/btnGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share ke Gmail"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginTop="12dp" />
+
+        <!-- MAPS -->
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Bengkel"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

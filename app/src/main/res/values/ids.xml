@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etName" type="id" />
+    <item name="etPhone" type="id" />
+    <item name="spService" type="id" />
+    <item name="radioVehicle" type="id" />
+    <item name="btnDate" type="id" />
+</resources>
