@@ -9,117 +9,131 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="16dp">
 
-        <!-- TITLE -->
+        <!-- LOGO / TITLE -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="🏁 RACEGARAGE PRO"
             android:textColor="#FF0000"
             android:textStyle="bold"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:layout_gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MotoGP Racing Workshop"
+            android:text="MA2R GARAGE Racing Workshop"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- BANNER PROMO -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_racing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 PROMO BULAN INI"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Tune Up Racing Diskon 20%\n• Gratis Nitrogen Ban\n• Voucher Dyno Test"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="25dp"/>
-
-        <!-- PROMO -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#1E1E1E"
-            android:padding="16dp"
-            android:layout_marginBottom="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="🔥 PROMO RACEGARAGE PRO"
-                android:textColor="#FFD700"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Diskon 30% Tune Up Racing!"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"/>
-
-        </LinearLayout>
+            android:layout_marginTop="8dp" />
 
         <!-- SPAREPART -->
-        <LinearLayout
-            android:layout_width="match_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#1E1E1E"
-            android:padding="16dp"
-            android:layout_marginBottom="20dp">
+            android:text="Sparepart Racing Baru"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="24dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="🛠 Sparepart Racing Baru"
-                android:textColor="#00E5FF"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+        <!-- PRODUCT 1 -->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="• ECU Racing\n• Ban Slick MotoGP\n• Knalpot Titanium\n• Oli Racing Premium"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/knalpot_racing" />
 
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Knalpot Shijiro Titanium"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
 
-        <!-- BUTTON BOOKING -->
+        <!-- PRODUCT 2 -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/velg_racing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Velg VND Racing AK55"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- PRODUCT 3 -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shock_racing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shockbreaker Racing NITRON+"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- BUTTON -->
+
         <Button
             android:id="@+id/btnBookingNow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Booking Servis Sekarang"
+            android:text="Reservasi Sekarang"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:backgroundTint="#D50000"
-            android:layout_marginTop="10dp"/>
-
-        <!-- BUTTON SHOP -->
-        <Button
-            android:id="@+id/btnShop"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Shop Sparepart Racing"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:backgroundTint="#2962FF"
-            android:layout_marginTop="15dp"/>
-
-        <!-- BUTTON MAPS -->
-        <Button
-            android:id="@+id/btnMapsHome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lokasi Workshop"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:backgroundTint="#00C853"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="30dp"/>
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
 
     </LinearLayout>
 

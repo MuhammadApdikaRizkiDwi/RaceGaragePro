@@ -9,55 +9,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button btnBooking, btnMaps, btnShop;
+    Button btnBookingNow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        btnBooking = findViewById(R.id.btnBookingNow);
-        btnMaps = findViewById(R.id.btnMapsHome);
-        btnShop = findViewById(R.id.btnShop);
+        // INISIALISASI BUTTON
+        btnBookingNow = findViewById(R.id.btnBookingNow);
 
-        // MASUK KE HALAMAN BOOKING
-        btnBooking.setOnClickListener(v -> {
+        // PINDAH KE HALAMAN BOOKING
+        btnBookingNow.setOnClickListener(v -> {
 
             Intent intent =
                     new Intent(
                             HomeActivity.this,
                             MainActivity.class
-                    );
-
-            startActivity(intent);
-        });
-
-        // BUKA MAPS
-        btnMaps.setOnClickListener(v -> {
-
-            Uri uri =
-                    Uri.parse(
-                            "geo:0,0?q=RaceGarage Workshop Jakarta"
-                    );
-
-            Intent mapIntent =
-                    new Intent(Intent.ACTION_VIEW, uri);
-
-            startActivity(mapIntent);
-        });
-
-        // TOKO SPAREPART
-        btnShop.setOnClickListener(v -> {
-
-            Uri uri =
-                    Uri.parse(
-                            "https://www.tokopedia.com/"
-                    );
-
-            Intent intent =
-                    new Intent(
-                            Intent.ACTION_VIEW,
-                            uri
                     );
 
             startActivity(intent);

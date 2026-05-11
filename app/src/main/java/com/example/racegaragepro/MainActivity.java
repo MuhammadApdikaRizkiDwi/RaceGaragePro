@@ -382,7 +382,7 @@ public class MainActivity extends AppCompatActivity {
 
             String shareText =
                     "🏁 RACEGARAGE PRO 🏁\n" +
-                            "Sistem Reservasi Bengkel Balap Online\n\n" +
+                            "MA2R GARAGE\n\n" +
 
                             "📋 DETAIL BOOKING\n\n" +
 
