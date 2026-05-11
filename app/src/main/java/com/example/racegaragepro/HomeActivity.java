@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class HomeActivity extends AppCompatActivity {
 
     Button btnBookingNow;
+    Button btnShop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class HomeActivity extends AppCompatActivity {
 
         // INISIALISASI BUTTON
         btnBookingNow = findViewById(R.id.btnBookingNow);
+        btnShop = findViewById(R.id.btnShop);
 
         // PINDAH KE HALAMAN BOOKING
         btnBookingNow.setOnClickListener(v -> {
@@ -27,6 +29,19 @@ public class HomeActivity extends AppCompatActivity {
                             HomeActivity.this,
                             MainActivity.class
                     );
+
+            startActivity(intent);
+        });
+
+        // ONLINE SHOP SHOPEE
+        btnShop.setOnClickListener(v -> {
+
+            Uri uri = Uri.parse(
+                    "https://shopee.co.id/search?keyword=sparepart%20racing"
+            );
+
+            Intent intent =
+                    new Intent(Intent.ACTION_VIEW, uri);
 
             startActivity(intent);
         });
